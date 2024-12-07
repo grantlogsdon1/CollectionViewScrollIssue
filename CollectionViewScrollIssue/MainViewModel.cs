@@ -4,62 +4,62 @@ namespace CollectionViewScrollIssue
 {
     public class MainViewModel
     {
-        public ObservableCollection<ParentItem> ParentItems { get; set; }
+        public ObservableCollection<CollectionViewItem> ParentItems { get; set; }
 
         public MainViewModel()
         {
-            ParentItems = new ObservableCollection<ParentItem>
+            ParentItems = new ObservableCollection<CollectionViewItem>
             {
-                new ParentItem
+                new CollectionViewItem
                 {
                     Title = "Inner CollectionView 1",
-                    ChildItems = new ObservableCollection<string> { "Child 1", "Child 2", "Child 3", "Child 4", "Child 5", "Child 6", "Child 7", "Child 8", "Child 9", "Child 10", }
+                    ChildItems = new ObservableCollection<string> { "Item 1", "Item 2", "Item 3", "Item 4", "Item 5", "Item 6", "Item 7", "Item 8", "Item 9", "Item 10", }
                 },
-                new ParentItem
+                new CollectionViewItem
                 {
                     Title = "Inner CollectionView 2",
-                    ChildItems = new ObservableCollection<string> { "Child A", "Child B", "Child C" }
+                    ChildItems = new ObservableCollection<string> { "Item A", "Item B", "Item C" }
                 },
-                new ParentItem
+                new CollectionViewItem
                 {
                     Title = "Inner CollectionView 3",
-                    ChildItems = new ObservableCollection<string> { "Child X", "Child Y", "Child Z" }
+                    ChildItems = new ObservableCollection<string> { "Item X", "Item Y", "Item Z" }
                 },
-                new ParentItem
+                new CollectionViewItem
                 {
                     Title = "Inner CollectionView 4",
-                    ChildItems = new ObservableCollection<string> { "Child 1", "Child 2", "Child 3", "Child 4", "Child 5", "Child 6", "Child 7", "Child 8", "Child 9", "Child 10", }
+                    ChildItems = new ObservableCollection<string> { "Item 1", "Item 2", "Item 3", "Item 4", "Item 5", "Item 6", "Item 7", "Item 8", "Item 9", "Item 10", }
                 },
-                new ParentItem
+                new CollectionViewItem
                 {
                     Title = "Inner CollectionView 5",
-                    ChildItems = new ObservableCollection<string> { "Child 1", "Child 2", "Child 3", "Child 4", "Child 5", "Child 6", "Child 7", "Child 8", "Child 9", "Child 10", }
+                    ChildItems = new ObservableCollection<string> { "Item 1", "Item 2", "Item 3", "Item 4", "Item 5", "Item 6", "Item 7", "Item 8", "Item 9", "Item 10", }
                 },
-                new ParentItem
+                new CollectionViewItem
                 {
                     Title = "Inner CollectionView 6",
-                    ChildItems = new ObservableCollection<string> { "Child 1", "Child 2", "Child 3", "Child 4", "Child 5", "Child 6", "Child 7", "Child 8", "Child 9", "Child 10", }
+                    ChildItems = new ObservableCollection<string> { "Item 1", "Item 2", "Item 3", "Item 4", "Item 5", "Item 6", "Item 7", "Item 8", "Item 9", "Item 10", }
                 },
-                new ParentItem
+                new CollectionViewItem
                 {
                     Title = "Inner CollectionView 7",
-                    ChildItems = new ObservableCollection<string> { "Child 1", "Child 2", "Child 3", "Child 4", "Child 5", "Child 6", "Child 7", "Child 8", "Child 9", "Child 10", }
+                    ChildItems = new ObservableCollection<string> { "Item 1", "Item 2", "Item 3", "Item 4", "Item 5", "Item 6", "Item 7", "Item 8", "Item 9", "Item 10", }
                 },
-                new ParentItem
+                new CollectionViewItem
                 {
                     Title = "Inner CollectionView 8",
-                    ChildItems = new ObservableCollection<string> { "Child 1", "Child 2", "Child 3", "Child 4", "Child 5", "Child 6", "Child 7", "Child 8", "Child 9", "Child 10", }
+                    ChildItems = new ObservableCollection<string> { "Item 1", "Item 2", "Item 3", "Item 4", "Item 5", "Item 6", "Item 7", "Item 8", "Item 9", "Item 10", }
                 },
-                new ParentItem
+                new CollectionViewItem
                 {
                     Title = "Inner CollectionView 9",
-                    ChildItems = new ObservableCollection<string> { "Child 1", "Child 2", "Child 3", "Child 4", "Child 5", "Child 6", "Child 7", "Child 8", "Child 9", "Child 10", }
+                    ChildItems = new ObservableCollection<string> { "Item 1", "Item 2", "Item 3", "Item 4", "Item 5", "Item 6", "Item 7", "Item 8", "Item 9", "Item 10", }
                 },
             };
         }
     }
 
-    public class ParentItem
+    public class CollectionViewItem
     {
         public string Title { get; set; }
         public ObservableCollection<string> ChildItems { get; set; }
